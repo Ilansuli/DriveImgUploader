@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 function App() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadStatus, setUploadStatus] = useState("");
 
-  const handleFileChange = (event) => {
+  const handleFileChange = (event: any) => {
     setSelectedFile(event.target.files[0]);
   };
 
